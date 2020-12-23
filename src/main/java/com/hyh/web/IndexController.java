@@ -10,7 +10,15 @@ import org.springframework.web.bind.annotation.*;
 public class IndexController {
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(){
         return "index";
+    }
+    @GetMapping("/blog")
+    public String blog(){
+        return "blog";
+    }
+    @GetMapping("/about")
+    public String about(){
+        return "about";
     }
 }
